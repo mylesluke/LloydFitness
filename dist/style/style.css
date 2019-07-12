@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+nav .navbar-toggler {
+  border: none;
+}
+
+nav .navbar-toggler:hover {
+  background: #44C184;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+nav .navbar-toggler .navbar-toggler-icon {
+  color: white;
+}
+
+nav .navbar-toggler .navbar-toggler-icon:hover {
+  color: black;
+}
+
+nav .navbar-brand {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Merriweather', serif;
+  margin-left: 5%;
+  letter-spacing: 2px;
+}
+
+nav .navbar-brand .nav-title {
+  color: #44C184;
+}
+
+.header {
+  background: #000 url("../images/home3.jpg");
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+
+.sub-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  color: white;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.sub-header .btn, .sub-header .btn-fx {
+  margin-left: 5%;
+  background: #44C184;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  font-weight: 600;
+}
+
+.sub-header .btn:before, .sub-header .btn-fx:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: white;
+  z-index: -1;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.sub-header .btn-fx:before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.sub-header .btn-fx:hover {
+  z-index: 0;
+  color: black;
+}
+
+.sub-header .btn-fx:hover:before {
+  height: 180%;
+}
+/*# sourceMappingURL=style.css.map */

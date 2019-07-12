@@ -1,0 +1,89 @@
+@import 'config';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    .navbar-toggler {
+        border: none;
+        &:hover {
+            background: $primary;
+            @include btn-flow;
+        }
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: 'Merriweather', serif;
+        margin-left: 5%;
+        letter-spacing: 2px;
+
+        .nav-title {
+            color: $primary;
+        }
+    }
+}
+
+.header {
+    background: #000 url("../images/home3.jpg");
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+
+}
+
+.sub-header {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    align-items: baseline;
+
+    .btn {
+        margin-left: 5%;
+        background: $primary;
+        border: none;
+        position: relative;
+        overflow: hidden;
+        transition: 1.5s;
+        font-weight: 600;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            background: white;
+            z-index: -1;
+            transition: 0.8s;
+        }
+    }
+
+    .btn-fx {
+        @extend .btn;
+
+        &:before {
+            top: 0;
+            border-radius: 0 0 50% 50%;
+        }
+
+        &:hover {
+            z-index: 0;
+            color: black;
+        }
+
+        &:hover:before {
+            height: 180%;
+        }
+    }
+}
