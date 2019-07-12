@@ -1,0 +1,16 @@
+{
+  "name": "lloydfitness",
+  "version": "1.0.0",
+  "description": "Fitness Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Myles Luke",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "LloydFitness"
+  }
+}
