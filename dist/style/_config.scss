@@ -2,6 +2,6 @@ $primary: #44C184;
 
 
 @mixin btn-flow {
-    transition: all .5s ease;
+    transition: all 1s ease-out;
     //opacity: 0.8;
 }

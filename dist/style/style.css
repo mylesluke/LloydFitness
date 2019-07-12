@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
 }
 
 nav .navbar-toggler {
@@ -15,16 +15,8 @@ nav .navbar-toggler {
 
 nav .navbar-toggler:hover {
   background: #44C184;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-}
-
-nav .navbar-toggler .navbar-toggler-icon {
-  color: white;
-}
-
-nav .navbar-toggler .navbar-toggler-icon:hover {
-  color: black;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 nav .navbar-brand {
@@ -34,6 +26,21 @@ nav .navbar-brand {
   font-family: 'Merriweather', serif;
   margin-left: 5%;
   letter-spacing: 2px;
+  position: relative;
+}
+
+nav .navbar-brand:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  bottom: 6px;
+  border-bottom: 1px solid #44C184;
+}
+
+nav .navbar-brand:hover:after {
+  border-bottom: 1px solid white;
 }
 
 nav .navbar-brand .nav-title {
@@ -41,11 +48,17 @@ nav .navbar-brand .nav-title {
 }
 
 .header {
-  background: #000 url("../images/home3.jpg");
-  height: 300px;
+  background: #000 url("../images/home.jpg") no-repeat center;
   background-size: cover;
-  background-repeat: no-repeat;
-  height: 40vh;
+  height: 50vh;
+  position: relative;
+}
+
+.header img {
+  width: 200px;
+  position: absolute;
+  left: 50px;
+  top: 100px;
 }
 
 .sub-header {
@@ -97,5 +110,54 @@ nav .navbar-brand .nav-title {
 
 .sub-header .btn-fx:hover:before {
   height: 180%;
+}
+
+main {
+  height: 50vh;
+}
+
+main .headings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5%;
+}
+
+main .headings h4 {
+  font-weight: 600;
+}
+
+main .headings hr {
+  width: 15%;
+}
+
+main .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+main .col h3 {
+  font-weight: 600;
+}
+
+main .col i {
+  color: #44C184;
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
