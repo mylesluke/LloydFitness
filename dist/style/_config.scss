@@ -1,6 +1,9 @@
+// Colours
 $primary: #44C184;
+$secondary: #343a40;
 
 
+// Animations
 @mixin btn-flow {
     transition: all 1s ease-out;
     //opacity: 0.8;
