@@ -23,9 +23,9 @@ nav .navbar-brand {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: 'Merriweather', serif;
+  font-family: 'Permanent Marker', cursive;
   margin-left: 5%;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   position: relative;
 }
 
@@ -43,12 +43,12 @@ nav .navbar-brand:hover:after {
   border-bottom: 1px solid white;
 }
 
-nav .navbar-brand .nav-title {
+.nav-title {
   color: #44C184;
 }
 
 .header {
-  background: #000 url("../images/home.jpg") no-repeat center;
+  background: #000 url("../images/home.jpg") no-repeat center top;
   background-size: cover;
   height: 55vh;
   position: relative;
@@ -77,6 +77,10 @@ nav .navbar-brand .nav-title {
           align-items: baseline;
 }
 
+.sub-header .btn-join {
+  margin-left: 5%;
+}
+
 .sub-header .btn-join:before {
   top: 0;
   border-radius: 0 0 50% 50%;
@@ -91,8 +95,7 @@ nav .navbar-brand .nav-title {
   height: 180%;
 }
 
-.btn, .sub-header .btn-join, main .section2 .col-services .footer .btn-signup, main .section2 .col-services .footer .btn-signup-blank {
-  margin-left: 5%;
+.btn, .sub-header .btn-join, main .section2 .col-services .footer .btn-signup, main .section2 .col-services .footer .btn-signup-blank, main .section3 form .right-container .btn-submit {
   background: #44C184;
   border: none;
   position: relative;
@@ -102,7 +105,7 @@ nav .navbar-brand .nav-title {
   font-weight: 600;
 }
 
-.btn:before, .sub-header .btn-join:before, main .section2 .col-services .footer .btn-signup:before, main .section2 .col-services .footer .btn-signup-blank:before {
+.btn:before, .sub-header .btn-join:before, main .section2 .col-services .footer .btn-signup:before, main .section2 .col-services .footer .btn-signup-blank:before, main .section3 form .right-container .btn-submit:before {
   content: "";
   position: absolute;
   left: 0;
@@ -132,12 +135,7 @@ nav .navbar-brand .nav-title {
   width: 80%;
 }
 
-main .section1 {
-  background: white;
-  padding: 20px;
-}
-
-main .section1 .main-heading {
+.section-heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,12 +149,17 @@ main .section1 .main-heading {
   padding: 2%;
 }
 
-main .section1 .main-heading h4 {
+.section-heading h4 {
   font-weight: 600;
 }
 
-main .section1 .main-heading hr {
+.section-heading hr {
   width: 15%;
+}
+
+main .section1 {
+  background: #fff;
+  padding: 20px;
 }
 
 main .section1 .col-main h3 {
@@ -173,30 +176,8 @@ main .section2 {
   padding: 20px;
 }
 
-main .section2 .content-heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2%;
-}
-
-main .section2 .content-heading h4 {
-  font-weight: 600;
-}
-
-main .section2 .content-heading hr {
-  width: 15%;
-}
-
 main .section2 .col-services {
-  background: white;
+  background: #fff;
   border-radius: 20px;
 }
 
@@ -287,5 +268,90 @@ main .section2 .col-services .footer .btn-signup-blank:hover {
 
 main .section2 .col-services .footer .btn-signup-blank:hover:before {
   height: 180%;
+}
+
+main .section3 {
+  background: #fff;
+  padding: 20px;
+}
+
+main .section3 form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .section3 form .left-container {
+  width: 50%;
+  padding: 10px;
+}
+
+main .section3 form .right-container {
+  width: 50%;
+  padding: 10px;
+}
+
+main .section3 form .right-container textarea {
+  resize: none;
+}
+
+main .section3 form .right-container .btn-submit {
+  width: 100%;
+}
+
+main .section3 form .right-container .btn-submit:before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+main .section3 form .right-container .btn-submit:hover {
+  z-index: 0;
+  color: #44C184;
+  border: 1px solid #44C184;
+}
+
+main .section3 form .right-container .btn-submit:hover:before {
+  height: 180%;
+}
+
+footer {
+  background: #343a40;
+  color: white;
+  padding: 20px;
+}
+
+footer .about {
+  padding: 20px;
+}
+
+footer .about h4 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+footer .about p {
+  padding-top: 10px;
+}
+
+footer .about .social-icon {
+  padding: 5px;
+}
+
+footer .about .social-icon:hover {
+  color: #44C184;
+  cursor: pointer;
+}
+
+footer .details {
+  padding: 20px;
+  overflow: hidden;
+}
+
+footer h6 {
+  text-align: center;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */

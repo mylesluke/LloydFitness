@@ -25,9 +25,10 @@ nav {
         font-size: 1.5rem;
         text-transform: uppercase;
         font-weight: 700;
-        font-family: 'Merriweather', serif;
+        //font-family: 'Merriweather', serif;
+        font-family: 'Permanent Marker', cursive;
         margin-left: 5%;
-        letter-spacing: 2px;
+        letter-spacing: 5px;
         position: relative;
 
         &:after {
@@ -43,17 +44,17 @@ nav {
         &:hover:after {
             border-bottom: 1px solid white;
         }
-
-        .nav-title {
-            color: $primary;
-        }
     }
+}
+// Lloyd Title Colour
+.nav-title {
+    color: $primary;
 }
 
 // Header & Image Offer
 .header {
     //padding: 2px;
-    background: #000 url("../images/home.jpg") no-repeat center;
+    background: #000 url("../images/home.jpg") no-repeat center top;
     background-size: cover;
     height: 55vh;
     position: relative;
@@ -81,7 +82,7 @@ nav {
     // Join Now Button Effect
     .btn-join {
         @extend .btn;
-
+        margin-left: 5%;
         &:before {
             top: 0;
             border-radius: 0 0 50% 50%;
@@ -100,7 +101,7 @@ nav {
 
 // General Button Config
 .btn {
-    margin-left: 5%;
+    //margin-left: 5%;
     background: $primary;
     border: none;
     position: relative;
@@ -128,30 +129,33 @@ nav {
     justify-content: baseline;
 }
 
+// Content Container
 .container {
     width: 80%;
+}
+
+// General Heading Config
+.section-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+
+    h4 {
+        font-weight: 600;
+    }
+
+    hr {
+        width: 15%;
+
+    }
 }
 
 // Main Section -- Why work with us?
 main {
     .section1 {
-        background: white;
+        background: $bg-work;
         padding: 20px;
-
-        .main-heading {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 2%;
-
-            h4 {
-                font-weight: 600;
-            }
-
-            hr {
-                width: 15%;
-            }
-        }
 
         // Biggest Gyms - Trainers - Programs
         .col-main {
@@ -169,29 +173,14 @@ main {
 
     // Services - Pricing
     .section2 {
-        background: #dfe4ea;
+        background: $bg-pricing;
         padding: 20px;
-
-        .content-heading {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 2%;
-
-            h4 {
-                font-weight: 600;
-            }
-
-            hr {
-                width: 15%;
-
-            }
-        }
 
         // Service Layout
         .col-services {
-            background: white;
+            background: $bg-services;
             border-radius: 20px;
+            
 
             &:hover {
                 //opacity: 0.7;
@@ -235,7 +224,7 @@ main {
                     list-style: none;
 
                     li {
-                        border-bottom: 2px solid #dfe4ea;
+                        border-bottom: 2px solid $bg-pricing;
                         font-size: 1rem;
                         padding: 3px;
 
@@ -292,13 +281,89 @@ main {
                 }
             }
 
-            // End of Footer         
+            // End of Service Footer         
         }
 
         // End of Services      
     }
 
     // End of Section 2
-}
+    .section3 {
+        background: $bg-contact;
+        padding: 20px;
+        form {
+            display: flex;
+            flex-direction: row;
+            
 
+            .left-container {
+                width: 50%;
+                padding: 10px;
+
+            }
+
+            .right-container {
+                width: 50%;
+                padding: 10px;
+                textarea {
+                    resize: none;
+                    
+                }
+
+                .btn-submit {
+                    @extend .btn;
+                    width: 100%;
+
+
+                    &:before {
+                        top: 0;
+                        border-radius: 0 0 50% 50%;
+                    }
+
+                    &:hover {
+                        z-index: 0;
+                        color: $primary;
+                        border: 1px solid $primary;
+                    }
+
+                    &:hover:before {
+                        height: 180%;
+                    }
+                }
+            }
+        }
+    }
+
+    // End of Section 3
+}
 // End of Main
+
+footer {
+    background: $secondary;
+    color: white;
+    padding: 20px;
+    .about {
+        padding: 20px;
+        h4 {
+            font-family: 'Permanent Marker', cursive;
+        }
+        p {
+            padding-top: 10px;
+        }
+        .social-icon {
+            padding: 5px;
+            &:hover {
+                color: $primary;
+                cursor: pointer;
+            }
+        }
+    }
+    .details {
+        padding: 20px;
+        overflow: hidden;
+    }
+    h6{
+        text-align: center;
+        font-weight: 600;
+    }
+}
