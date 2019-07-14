@@ -356,4 +356,19 @@ footer h6 {
   text-align: center;
   font-weight: 600;
 }
+
+footer .btnScrollUp {
+  background: #44C184;
+  border-radius: 10%;
+  padding: 10px;
+  color: white;
+  position: fixed;
+  z-index: 99;
+  bottom: 20px;
+  right: 20px;
+}
+
+footer .btnScrollUp:hover {
+  color: #343a40;
+}
 /*# sourceMappingURL=style.css.map */
