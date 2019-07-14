@@ -52,6 +52,7 @@ nav .navbar-brand:hover:after {
   background-size: cover;
   height: 55vh;
   position: relative;
+  overflow: hidden;
 }
 
 .header img {
@@ -155,6 +156,7 @@ nav .navbar-brand:hover:after {
 
 .section-heading hr {
   width: 15%;
+  border: 1px solid #44C184;
 }
 
 main .section1 {

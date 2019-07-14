@@ -58,13 +58,14 @@ nav {
     background-size: cover;
     height: 55vh;
     position: relative;
+    overflow: hidden;
 
     img {
         width: 200px;
         position: absolute;
         left: 50px;
         top: 100px;
-
+        
 
     }
 }
@@ -147,6 +148,7 @@ nav {
 
     hr {
         width: 15%;
+        border: 1px solid $primary;
 
     }
 }
